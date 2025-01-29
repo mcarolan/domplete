@@ -1,8 +1,8 @@
 import { describe, it, expect } from "vitest"
-import { greet } from "../src"
+import { suggestDomains } from "../src"
 
-describe("greet function", () => {
-    it("shoudl return a greeting message", () => {
-        expect(greet("Martin")).toBe("woah Martin");
+describe("suggest function", () => {
+    it("should return results for go", () => {
+        expect(suggestDomains("go", 10)).toHaveLength(10);
     });
 });
